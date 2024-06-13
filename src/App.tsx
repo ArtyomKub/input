@@ -12,7 +12,7 @@ function App() {
         ]
     )
 
-    const addMessage = () => {
+    const addMessage = (title:string) => {
         setMessage([])
     }
 

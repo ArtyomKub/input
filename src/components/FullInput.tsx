@@ -1,16 +1,16 @@
 import React, {ChangeEvent} from 'react';
 
 type FullInputPropsType = {
-    addMessage: ()=>void
+    addMessage: (title: string) => void
 }
 
-export const FullInput = (props:FullInputPropsType) => {
+export const FullInput = (props: FullInputPropsType) => {
 
     const [title, setTitle] = React.useState('');
     console.log(title)
 
     const onClickButtonHandler = () => {
-
+        props.addMessage(title)
     }
 
     const onChangeInputHandler = (event: ChangeEvent<HTMLInputElement>) => {
@@ -20,7 +20,7 @@ export const FullInput = (props:FullInputPropsType) => {
 
     return (
         <div>
-            <input onChange={()=>onChangeInputHandler}/>
+            <input onChange={() => onChangeInputHandler}/>
             <button onClick={onClickButtonHandler}>+</button>
         </div>
     );
