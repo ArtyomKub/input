@@ -7,7 +7,7 @@ export const FullInput = () => {
     return (
         <div>
             <input/>
-            <button>+</button>
+            <button onClick={()=>{}}>+</button>
         </div>
     );
 };
