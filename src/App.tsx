@@ -41,6 +41,7 @@ function App() {
                     <div key={index}>{el.message}</div>
                 )
             })}
+
         </div>
     );
 }
