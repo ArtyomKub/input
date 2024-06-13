@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {ChangeEvent} from 'react';
 
 export const FullInput = () => {
 
@@ -8,7 +8,7 @@ export const FullInput = () => {
 
     }
 
-    const onChangeInputHandler = () => {
+    const onChangeInputHandler = (event: ChangeEvent<HTMLInputElement>) => {
         setTitle(title);
     }
 
