@@ -13,7 +13,7 @@ function App() {
     )
 
     const addMessage = (title:string) => {
-        let newMessage={message:'New message'};
+        let newMessage={message:title};
         setMessage([newMessage, ...message]);
 
     }
