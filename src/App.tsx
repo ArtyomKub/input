@@ -13,8 +13,9 @@ function App() {
     )
 
     const addMessage = (title:string) => {
-        // setMessage([])
-        console.log(title)
+        let newMessage={message:'New message'};
+        setMessage([newMessage, ...message]);
+
     }
 
     return (
