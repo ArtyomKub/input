@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Input = () => {
+export const Input = () => {
     return (
         <div>
             
@@ -8,4 +8,3 @@ const Input = () => {
     );
 };
 
-export default Input;
