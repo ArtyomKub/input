@@ -1,6 +1,10 @@
 import React, {ChangeEvent} from 'react';
 
-export const FullInput = () => {
+type FullInputPropsType = {
+    addMessage: ()=>void
+}
+
+export const FullInput = (props:FullInputPropsType) => {
 
     const [title, setTitle] = React.useState('');
     console.log(title)
