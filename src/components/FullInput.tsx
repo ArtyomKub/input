@@ -6,7 +6,7 @@ export const FullInput = () => {
 
     return (
         <div>
-            <input/>
+            <input onChange={(e) => setTitle(e.target.value)} value={title} />
             <button onClick={()=>{}}>+</button>
         </div>
     );
