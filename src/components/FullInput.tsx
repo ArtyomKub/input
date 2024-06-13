@@ -9,7 +9,7 @@ export const FullInput = (props:FullInputPropsType) => {
     const [title, setTitle] = React.useState('');
     console.log(title)
 
-    const onClickHandler = () => {
+    const onClickButtonHandler = () => {
 
     }
 
@@ -21,7 +21,7 @@ export const FullInput = (props:FullInputPropsType) => {
     return (
         <div>
             <input onChange={()=>onChangeInputHandler}/>
-            <button onClick={onClickHandler}>+</button>
+            <button onClick={onClickButtonHandler}>+</button>
         </div>
     );
 };
