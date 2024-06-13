@@ -11,10 +11,9 @@ export const Input = (props: InputPropsType) => {
         props.setTitle(event.currentTarget.value)
     }
 
-
     return (
         <div>
-            <input onChange={onChangeInputHandler} value={props.title} />
+            <input onChange={onChangeInputHandler} value={props.title}/>
         </div>
     );
 };

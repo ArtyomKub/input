@@ -15,7 +15,6 @@ function App() {
     let [title, setTitle] = React.useState('');
     console.log(title)
 
-
     const addMessage = (title: string) => {
         let newMessage = {message: title};
         setMessage([newMessage, ...message]);
@@ -23,13 +22,20 @@ function App() {
 
     const callBackButtonHandler = () => {
         addMessage(title)
+        setTitle('')
     }
 
     return (
         <div className="App">
-            {/*<FullInput addMessage={addMessage}/>*/}
-            <Input title={title} setTitle={setTitle}/>
-            <Button name={'+'} callBack={callBackButtonHandler}/>
+            <div>
+                <div>First principal</div>
+                <FullInput addMessage={addMessage}/>
+            </div>
+            <div>
+                <div>Second principal</div>
+                <Input title={title} setTitle={setTitle}/>
+                <Button name={'+'} callBack={callBackButtonHandler}/>
+            </div>
             {message.map((el, index) => {
                 return (
                     <div key={index}>{el.message}</div>
