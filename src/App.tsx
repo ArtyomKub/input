@@ -23,7 +23,7 @@ function App() {
         <div className="App">
             {/*<FullInput addMessage={addMessage}/>*/}
             <Input/>
-            <Button/>
+            <Button name={'+'} callBack={()=>{}}/>
             {message.map((el, index) => {
                 return (
                     <div key={index}>{el.message}</div>
