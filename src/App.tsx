@@ -13,7 +13,8 @@ function App() {
     )
 
     const addMessage = (title:string) => {
-        setMessage([])
+        // setMessage([])
+        console.log(title)
     }
 
     return (
