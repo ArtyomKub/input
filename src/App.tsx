@@ -12,9 +12,13 @@ function App() {
         ]
     )
 
+    const addMessage = () => {
+        setMessage([])
+    }
+
     return (
         <div className="App">
-            <FullInput/>
+            <FullInput addMessage={addMessage}/>
             {message.map((el, index) => {
                 return (
                     <div key={index}>{el.message}</div>
