@@ -9,10 +9,12 @@ function App() {
             {message: 'message1'},
             {message: 'message2'},
             {message: 'message3'},
-            {message: 'message4'},
-            {message: 'message5'}
         ]
     )
+
+    let [title, setTitle] = React.useState('');
+
+
 
     const addMessage = (title: string) => {
         let newMessage = {message: title};
