@@ -14,7 +14,7 @@ export const Input = (props: InputPropsType) => {
 
     return (
         <div>
-            <input onChange={onChangeInputHandler} value={props.title}/>
+            <input onChange={onChangeInputHandler} value={props.title} />
         </div>
     );
 };

@@ -13,7 +13,7 @@ function App() {
     )
 
     let [title, setTitle] = React.useState('');
-
+    console.log(title)
 
 
     const addMessage = (title: string) => {
@@ -21,11 +21,15 @@ function App() {
         setMessage([newMessage, ...message]);
     }
 
+    const callBackButtonHandler = () => {
+        addMessage(title)
+    }
+
     return (
         <div className="App">
             {/*<FullInput addMessage={addMessage}/>*/}
             <Input title={title} setTitle={setTitle}/>
-            <Button name={'+'} callBack={()=>{}}/>
+            <Button name={'+'} callBack={callBackButtonHandler}/>
             {message.map((el, index) => {
                 return (
                     <div key={index}>{el.message}</div>
