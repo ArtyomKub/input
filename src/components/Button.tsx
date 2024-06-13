@@ -5,10 +5,15 @@ type ButtonPropsType = {
     callBack: () => void
 }
 
-export const Button = () => {
+export const Button = (props: ButtonPropsType) => {
+
+    const onClickButtonHandler = () => {
+        props.callBack()
+    }
+
     return (
         <div>
-            <button>+</button>
+            <button onClick={onClickButtonHandler}>{props.name}</button>
         </div>
     );
 };
