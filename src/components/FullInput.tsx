@@ -8,9 +8,13 @@ export const FullInput = () => {
 
     }
 
+    const onChangeInputHandler = () => {
+        setTitle(title);
+    }
+
     return (
         <div>
-            <input onChange={(e) => setTitle(e.target.value)} value={title} />
+            <input onChange={onChangeInputHandler}/>
             <button onClick={onClickHandler}>+</button>
         </div>
     );
